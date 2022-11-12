@@ -33,7 +33,7 @@
 								<h1>Hey There, This is Pratik</h1>
 							</header>
 							<div class="content">
-								<p> Software Engineer, Full Stack Developer, Data Science Enthusiast</p>
+								<p> Software Engineer | Full Stack Developer | Data Scientist (In Making)</p>
 								
 							</div>
 						</div>
@@ -49,7 +49,7 @@
 										<img src="images/tech-stacks-and-tech-radar-lead_.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">Skills & Technologies</a></h3>
+										<h3><a href="generic.html" class="link">Skills & Technologies</a></h3>
 										<p>Skills I've gained and Technologies I've explored</p>
 									</header>
 								</article>
@@ -74,7 +74,24 @@
 									<header class="major">
 										<h2>About Me</h2>
 									</header>
-									<p>Agile, Adaptive and Ambitious are the 3 pillars of my foundation. I'm a passionate engineer who believes in building things that impacts society for good. A tech enthusiast, a highly motivated individual and a diligent worker.</p>
+									<p>Agile, Adaptive and Ambitious are the 3 pillars of my foundation. I'm a passionate engineer who believes in building things that impact society for good. A tech enthusiast, a highly motivated individual and a diligent worker. 
+
+									
+									<br>
+									</p>
+										Why engineering ? 
+										<br>
+										<br>
+
+In high school I took up a class involving computer programming. I quickly understood that there was a field of study that did not require me to rote learn and do any more of the history and political Science homeworks. Since then my hunger and passion for Software Development has only grown over time. 
+<br>
+<br>
+Why Grad School then?
+<br>
+<br>
+As i approached my final months at College (Undergrad) i was introduced to Deep learning (Neural Nets Specifically) by one the seniors i looked up to. When he explained to me how an ANN worked and how we were artificially replicating the human brain to do a specific task (it blew me away). I immediately knew i had to learn this skill and everything there is to know related to Machine Learning and Data Science. 
+<br>
+									</p>
 									
 								</div>
 							</section>
@@ -85,7 +102,7 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
+								<form method="post" action="#" name="submit-to-google-sheet">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -140,6 +157,7 @@
 							<ul class="icons">
 								<li><a href="https://github.com/Pratik-Prakash-Sannakki" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 								<li><a href="https://www.linkedin.com/in/pratik-p-s-64aa21185/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://www.kaggle.com/saibabaprakash1/code" class="fab fa-kaggle"><span class="label"></span></a></li>
 							</ul>
 							<ul class="copyright">
 								<li>&copy; Pratik P S</li>
@@ -157,6 +175,23 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<form name="submit-to-google-sheet">
+				<!-- Scripts <input name="email" type="email" placeholder="Email" required>
+				<button type="submit">Send</button>-->
+			  </form>
+			  
+			  <script>
+				const scriptURL = 'https://script.google.com/macros/s/AKfycbwwdOHGWL-DuBlqzZiEA5JXPbADtZbZdl_8qlB-x31yJAUEX5WH3AO9_rqHmedUM5yJ/exec'
+				const form = document.forms['submit-to-google-sheet']
+			  
+				form.addEventListener('submit', e => {
+				  e.preventDefault()
+				  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+					.then(response => console.log('Success!', response))
+					.catch(error => console.error('Error!', error.message))
+				})
+			  </script>
 
 	</body>
 </html>
