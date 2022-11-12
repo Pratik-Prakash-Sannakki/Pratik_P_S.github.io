@@ -59,3 +59,9 @@ Answer the following questions:
 * Remove 1%, 5%, and 10% of your data randomly and impute the values back using at least 3 imputation methods. How well did the methods recover the missing values?  That is remove some data, check the % error on residuals for numeric data and check for bias and variance of the error.
 
 For categorical data, calculate the accuracy and a confusion matrix.
+
+
+
+
+
+
