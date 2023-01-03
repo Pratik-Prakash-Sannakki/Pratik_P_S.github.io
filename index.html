@@ -118,7 +118,12 @@ As i approached my final months at College (Undergrad) i was introduced to Deep 
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="submit" value="Send Message" class="primary" onclick="myFunction()"/></li>
+										<script>
+											function myFunction() {
+											alert("Thank you for your response. I will get back ");
+											}
+											</script>
 										<li><input type="reset" value="Clear" /></li>
 									</ul>
 								</form>
@@ -190,7 +195,9 @@ As i approached my final months at College (Undergrad) i was introduced to Deep 
 				  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 					.then(response => console.log('Success!', response))
 					.catch(error => console.error('Error!', error.message))
-				})
+				}
+				)
+				
 			  </script>
 
 	</body>
